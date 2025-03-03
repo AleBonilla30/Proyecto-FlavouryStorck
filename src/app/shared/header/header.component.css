@@ -1,0 +1,101 @@
+.header{
+    width: 100%;
+    height: 550px;
+    background-image: url('../../../../public/assets/fondoHeader.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    color: black;
+    
+    
+
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    margin-left: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #ED7557;
+}
+
+.header-content{
+    max-width: 500px;
+    margin-bottom: 10rem;
+    margin-left: 3rem;
+
+}
+
+.header-content h1{
+    font-size: 3rem;
+}
+.header-content p {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.btnComenzar{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 20px;
+}
+.btnComenzar:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .header{
+        height: 450px;
+    }
+    .nav-link{
+        font-size: 1rem;
+    }
+    .header-content{
+        max-width: 200px;
+        margin-bottom: 4.5rem;
+        margin-left: 0.5rem;
+    }
+    .header-content h1{
+        font-size: 1.5rem;
+    }
+    .header-content p  {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    
+    .nav-item {
+        margin-left: 0; 
+        margin-bottom: 10px;
+    }
+    .btnComenzar{
+        padding: 4px;
+    }
+}
