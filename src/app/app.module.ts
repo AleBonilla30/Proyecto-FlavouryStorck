@@ -7,6 +7,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { LoginComponent } from './shared/login/login.component';
+import { CreateAccountComponent } from './shared/create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ModalComponent } from './components/modal/modal.component';
     HeaderComponent,
     FooterComponent,
     InicioComponent,
-    ModalComponent
+    ModalComponent,
+    LoginComponent,
+    CreateAccountComponent
   ],
   imports: [ 
     BrowserModule,
