@@ -7,6 +7,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
+import { InicioAdminComponent } from './components/inicio-admin/inicio-admin.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ModalComponent } from './components/modal/modal.component';
     HeaderComponent,
     FooterComponent,
     InicioComponent,
-    ModalComponent
+    ModalComponent,
+    HeaderAdminComponent,
+    InicioAdminComponent,
+    
   ],
   imports: [ 
     BrowserModule,
