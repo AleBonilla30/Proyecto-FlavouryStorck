@@ -9,13 +9,16 @@ import {  Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'FlavouryStock';
+  //todo: Prueba de user
+  user= "usuario"
 
   private router = inject(Router); // Nueva forma de inyectar Router en Angular 19
   currentHeader = signal('inicio'); // Usa signals en lugar de variables reactivas tradicionales
 
   constructor() {
     // Computed se actualiza automáticamente cuando cambia la URL
-    computed(() => {
+    //todo comentado mientras prueba de user
+    /* computed(() => {
       const url = this.router.url;
       if (url.includes('/header-admin')) {
         this.currentHeader.set('header-admin');
@@ -24,7 +27,18 @@ export class AppComponent {
       } else {
         this.currentHeader.set('inicio');
       }
-    });
+    }); */
+
+    
+      let user = this.user;
+      if (user=='admin') {
+        this.currentHeader.set('header-admin');
+      } else if (user=='usuario') {
+        this.currentHeader.set('header-usuario');
+      } else {
+        this.currentHeader.set('inicio');
+      }
+    
   }
 
   /* nombre: string = '';

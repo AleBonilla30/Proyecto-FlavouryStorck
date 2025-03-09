@@ -4,7 +4,7 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
-.fondo1, .fondo2, .fondo3{
+.fondo{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -61,7 +61,7 @@
     background-color: rgba(255,255,255,0.3);
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1200px){
     .segundo{
         flex-direction: column;
     }
