@@ -7,6 +7,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { UsuarioHeaderComponent } from './components/usuario-header/usuario-header.component';
 import { LoginComponent } from './shared/login/login.component';
 import { CreateAccountComponent } from './shared/create-account/create-account.component';
 
@@ -17,6 +19,8 @@ import { CreateAccountComponent } from './shared/create-account/create-account.c
     FooterComponent,
     InicioComponent,
     ModalComponent,
+    UsuarioComponent,
+    UsuarioHeaderComponent,
     LoginComponent,
     CreateAccountComponent
   ],
