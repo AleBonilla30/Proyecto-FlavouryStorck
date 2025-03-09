@@ -1,17 +1,17 @@
-/* Añade estos estilos al CSS existente */
+
 
 
 .main {
-  /* Fondo principal */
+
   background-image: url('../../../../public/assets/fondo-inicio.jpg');
   background-size: cover;
   background-position: center;
   
-  /* Asegurar que ocupe toda la pantalla */
+ 
   min-height: 100vh;
   width: 100%;
   
-  /* Posicionamiento para el formulario */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,17 +19,17 @@
 }
 
 .form-container {
-  /* Solo propiedades de layout */
+
   max-width: 500px;
   width: 100%;
   padding: 2rem;
   border-radius: 10px;
   border: solid white 4px;
   
-  /* Centrado y espacio */
+ 
   margin: 0 auto;
   
-  /* Sin background ni efectos visuales */
+
   background: Rgba(255,255,255, 0.3);
 }
 
@@ -50,7 +50,7 @@
   }
 
   
-  /* Fondo semitransparente */
+
  
   
   .form-group {
@@ -75,8 +75,8 @@
     transition: all 0.3s ease;
   }
   .form-input::placeholder {
-    color: #444 !important; /* Color oscuro */
-    opacity: 1 !important; /* Firefox necesita esto */
+    color: #444 !important; 
+    opacity: 1 !important; /*  ya no necesito important probar */
   }
   
   
