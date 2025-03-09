@@ -1,4 +1,9 @@
-
+.fondo-pantalla{
+    background-image: url('../../../../public/assets/fondo-inicio.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 .fondo1, .fondo2, .fondo3{
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,13 +14,17 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 5px rgba(0,0,0,0.5);
-    border-radius: 20px;
+}
+.segundo{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .texto{
     color: white;
-    width: 400px;
+    width: 450px;
     font-weight: bolder;
+    padding: 10px;
 }
 .link1, .link2{
     text-decoration: none;
@@ -50,4 +59,11 @@
 }
 .btnAcceder:hover{
     background-color: rgba(255,255,255,0.3);
+}
+
+@media (max-width: 1024px){
+    .segundo{
+        flex-direction: column;
+    }
+
 }
