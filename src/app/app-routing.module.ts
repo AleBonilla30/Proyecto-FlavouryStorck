@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'create-account', component: CreateAccountComponent },
   { path: 'usuario', component: UsuarioComponent },
-   { path: 'inicio-admin', component: InicioAdminComponent },
+  { path: 'inicio-admin', component: InicioAdminComponent },
 
   //revisar si es necesario
 ];

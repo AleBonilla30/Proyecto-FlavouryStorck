@@ -1,50 +1,9 @@
-/* .main{
+.fondo-pantalla{
     background-image: url('../../../../public/assets/fondo-inicio.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
 }
-
-.circle-1, .circle-2, .circle-3, .circle-4{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 20px; / Centra el círculo y añade margen inferior *
-    position: relative; / Para posicionar el círculo encima del texto *
-    z-index: 1; / Asegura que el círculo esté encima del texto *
-    cursor: pointer;
-}
-
-.rectangulo{
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    margin-top: -50px;  Ajusta la posición para que el círculo esté encima
-    position: relative;  Para posicionar el rectángulo debajo del círculo 
-    z-index: 0;  Asegura que el rectángulo esté debajo del círculo 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border: 1px solid #1E222B;
-    font-weight: bold;
-    font-size: 20px;
-}
-.icon{
-    color: white;
-    font-size: 2.2rem;
-}
-.texto{
-    font-size: 1.2rem;
-} */
-
 .fondo{
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,18 +14,19 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 5px rgba(0,0,0,0.5);
-    border-radius: 20px;
+    
+}
+.segundo{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0;
 }
 
 .texto{
-    color: black;
-    font-size: 1.5rem;
-    width: 400px;
+    color: white;
+    width: 80%;
     font-weight: bolder;
-    
-}
-.texto p{
-    margin: auto 0;
+    padding: 10px;
 }
 .link1, .link2{
     text-decoration: none;
@@ -74,31 +34,63 @@
     font-weight: bold;
 }
 
-.cuadrado{
-    background-color: rgba(255,255,255,0.7);
-    border-radius: 15px;
+.cuadrado-admin-user {
     
+    background-color: rgba(255,255,255,0.7);
+    padding: 40px;
+    border: 4px solid #8093FF;
+    border-radius: 15px;
 }
-.cuadrado1 {
-    border: 4px solid #839aff;
-}
-
-.cuadrado2{
-    border: 4px solid #ED7557;
-}
-
-.cuadrado3{
-    border: 4px solid #579E82;
-}
-.cuadrado4{
+.cuadrado-admin-receta{
+    
+    background-color: rgba(255,255,255,0.7);
+    padding: 40px;
     border: 4px solid #F18C57;
+    border-radius: 15px;
+}
+.cuadrado-registro-productos{
+    
+    background-color: rgba(255,255,255,0.7);
+    padding: 40px;
+    border: 4px solid #62C49A;
+    border-radius: 15px;
 }
 
+.cuadrado-gestion-stock{
+    
+    background-color: rgba(255,255,255,0.7);
+    padding: 40px;
+    border: 4px solid #398d69;
+    border-radius: 15px;
+}
+
+.cuadrado-recetas-inteligentes{
+    
+    background-color: rgba(255,255,255,0.7);
+    padding: 40px;
+    border: 4px solid #ED7557;
+    border-radius: 15px;
+}
 .btnAcceder{
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    color: white;
     width: 100px;
 }
-.btnAcceder:hover{
+.btnBotonera{
+    border: 2px solid white;
+    color: white;
+    
+}
+.btnAcceder:hover, .btnBotonera:hover{
     background-color: rgba(255,255,255,0.3);
+}
+
+@media (max-width: 1200px){
+    .segundo{
+        flex-direction: column;
+        
+    }
+    
+   
+
 }
